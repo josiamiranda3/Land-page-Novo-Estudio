@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Estúdio Criativo & Cinematográfico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <div class="vibe-panel">
+        <video src="assets/videos/Vídeo_Abstrato_de_Salvador_Bahia.mp4" autoplay loop muted class="vibe-video"></video>
+    </div>
+
+    <div id="main-content" data-scroll-container>
+
+        <header data-scroll-section>
+    <a href="#" class="logo magnetic-link">AURA</a>
+    
+    <nav id="main-nav" class="main-nav">
+        <a href="#projects" class="nav-item magnetic-link" data-scroll-to><span>Projetos</span></a>
+        <a href="#studio" class="nav-item magnetic-link" data-scroll-to><span>O Estúdio</span></a>
+        <a href="#contact" class="nav-item magnetic-link" data-scroll-to><span>Contato</span></a>
+    </nav>
+
+    <button id="hamburger-btn" class="magnetic-link" aria-label="Abrir menu" aria-expanded="false">
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+</header>
+
+        <section class="hero" data-scroll-section>
+            <h1 class="hero-title">
+                <span class="line">Capturamos a Essência.</span>
+                <span class="line">Revelamos a <span class="text-aura">Aura.</span></span>
+            </h1>
+        </section>
+
+        <section id="projects" class="projects-section" data-scroll-section>
+            <div class="projects-grid">
+                <div class="project-item p-1" data-scroll data-scroll-speed="1.2">
+                    <img src="assets/images/proj2.png" alt="Projeto 1">
+                    <div class="project-overlay"><h3>Marca A</h3></div>
+                </div>
+                <h2 class="grid-title magnetic-link" data-scroll data-scroll-speed="2">Portfólio</h2>
+                <div class="project-item p-2" data-scroll data-scroll-speed="1">
+                    <img src="assets/images/studio1.png" alt="Projeto 2">
+                    <div class="project-overlay"><h3>Filme B</h3></div>
+                </div>
+                <div class="project-item p-3" data-scroll data-scroll-speed="1.5">
+                    <img src="assets/images/proj4.png" alt="Projeto 3">
+                    <div class="project-overlay"><h3>Ensaio C</h3></div>
+                </div>
+                <div class="project-item p-4" data-scroll data-scroll-speed="1">
+                    <img src="assets/images/proj3.png" alt="Projeto 4">
+                    <div class="project-overlay"><h3>Web D</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="studio" class="studio-section" data-scroll-section>
+            <div class="scrollytelling-container">
+                <h2 data-scroll data-scroll-class="is-visible">O Estúdio</h2>
+                <p data-scroll data-scroll-class="is-visible" class="studio-p">
+                    AURA é mais que um estúdio. Somos um coletivo de artistas visuais, diretores e estrategistas baseados na energia criativa de Salvador, Bahia.
+                </p>
+                <p data-scroll data-scroll-class="is-visible" class="studio-p">
+                    Nossa missão é traduzir ideias em narrativas visuais que não apenas comunicam, mas também emocionam e definem identidades.
+                </p>
+                <div class="studio-showcase" data-scroll data-scroll-class="is-visible">
+                    <img src="assets/images/proj1.png" alt="Equipe do estúdio AURA">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" data-scroll-section>
+            <h2 class="contact-title" data-scroll data-scroll-class="is-visible">Vamos Criar.</h2>
+            <form class="contact-form" data-scroll data-scroll-class="is-visible">
+                <div class="form-group magnetic-link">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Seu Nome</label>
+                </div>
+                <div class="form-group magnetic-link">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Seu Email</label>
+                </div>
+                <button type="submit" class="submit-btn magnetic-link"><span>Enviar</span></button>
+            </form>
+        </section>
+
+        <footer data-scroll-section>
+            <p>&copy; 2025 AURA Estúdio. Salvador, Bahia.</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
